@@ -1,0 +1,131 @@
+.tabsWrapper{
+
+    border-right: 1px solid #bbbbbb;
+    
+}
+
+.tabsHeader{
+
+    border-bottom: 1px solid #bbbbbb;
+    min-height: 50px;
+    position: relative;
+
+}
+
+.tabsHeader::after{
+
+    border: 7px solid #0e598b;
+    content: "";
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    bottom: -14px;
+    transition:0.5s;
+    left: calc(33.3% * ( var(--x-SidebarStickLeft) + 1 ) - 19.5%);
+    opacity:0;
+}
+
+.tabsHeader::before{
+    width: 33.3%;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid #007ac1;
+    content: "";
+    transition: 0.5s;
+    left: calc(33.3% * var(--x-SidebarStickLeft));
+    z-index:2;
+}
+
+.x-tabsButtons{
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+
+}
+
+.tabsBody {
+
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+
+.x-SidebarTabsIcon{
+    color:#606060;
+}
+
+.x-SideIconActive{
+    color:#007ac1;
+}
+
+.x-tabsContent{
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.tabsBody div:nth-child(1){transform: translateX(calc(100% *  var(--x-SidebarContentPos) )) ;}
+.tabsBody div:nth-child(2){transform: translateX(calc(100% * ( var(--x-SidebarContentPos) + 1 ))) ;}
+.tabsBody div:nth-child(3){transform: translateX(calc(100% * ( var(--x-SidebarContentPos) + 2 ))) ;}
+
+
+.x-SidebarTabActive{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 1s; 
+}
+
+.x-SidebarSecondaryMenu{
+    color: #606060;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    width: 61px;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .x-SidebarSecondaryMenu{
+        display:flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+    
+
+
+    .tabsWrapper{
+
+        border-right: var(--x-SidebarBorder) solid #bbbbbb;
+        
+    }
+
+}
+
+::ng-deep .sideTooltip{
+    font-family:'Roboto';
+    font-size:0.9rem;
+}
+
+.x-MenuButton{
+    margin-right:5px;
+}
+
+.x-searchHideClass{
+    margin:0;
+    padding:0;
+}

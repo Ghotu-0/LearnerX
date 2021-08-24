@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+
+  --x-MainNavbar-Color: white;
+  --x-MainNavbar-BoxShadow: 0 0 0x 0px rgb(0 0 0 / 50%);
+  --x-MainSidebar-BColor:white;
+
+
+  /* For computational design */
+  --x-SidebarStickLeft:0;
+  --x-SidebarContentPos:0;
+  --x-SidebarLeft:0;
+  --x-MainOpacity:1;
+  --x-SidebarBorder:1px;
+  --x-350pxDrop:false;
+
+
+}
+
+ 
+@media only screen and (max-width: 1000px) {
+
+  :root{
+      --x-SidebarLeft:-240px;
+      --x-SidebarBorder:0px;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  :root{
+    --x-350pxDrop:true;
+  }
+
+}
+
+
+.dFlex {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+.flexC {
+
+  flex-direction: column;
+
+}
+
+.flexR {
+
+  flex-direction: row;
+
+}
+
+.m-0 {
+
+  margin: 0 !important;
+  ;
+
+}
+
+.p-0 {
+
+  padding: 0 !important;
+
+}
+
+.xBody {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.userN{
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+.dNone{
+  display: none  !important;
+}
+
+.dFlexI {
+  display: flex !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+}

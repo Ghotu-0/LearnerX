@@ -1,0 +1,68 @@
+<div class="dFlex w-100 h-100"> 
+    <div class="dFlex  h-100 x-Nav1">
+        <button class="x-MenuButton"  mat-icon-button aria-label="Open menu button">
+            <mat-icon class="x-MenuIcons"></mat-icon>
+        </button>
+        <div class="x-LogoContainer">
+            LearnerX
+        </div>
+    </div>
+    <div class="dFlex w-100 h-100 x-Nav2 x-PrimarySearch">
+        <div class="dFlex x-searchWrapper w-100">
+            <input placeholder="Search" class="x-searchInputArea w-100" type="text" >
+            <div matTooltipClass="navTooltip" matTooltip="Search" matRipple [matRippleColor]="'#00000012'" class="x-searchButton dFlex ">
+                <mat-icon class="x-searchIcon">
+                    search
+                </mat-icon>
+            </div>
+        </div>
+    </div>
+    <div class="dFlex  h-100 x-Nav3">
+    <div class="extraTrigger dFlex">
+     <button (click)="toogleMenubar('dFlex')"  matTooltipClass="navTooltip" [matTooltip]="toogleMenubarTitle"  class="x-NavbarIcon extraTriggerButton" mat-icon-button aria-label="Open quick menu">
+        <mat-icon>
+            expand_more
+        </mat-icon>
+     </button>
+    </div>
+    <div [ngClass]="toogleMenubarClass" class="dFlex  h-100 w-100 extraFlex">
+        <button (click)="toogleSearchbar('dFlex')" matTooltipClass="navTooltip" class="x-NavbarIcon x-PrimarySearchButton" matTooltip="Search" style="line-height:0px;" mat-icon-button aria-label="Back to Navbar">
+            <mat-icon>search</mat-icon>
+          </button>
+
+        <button  matTooltipClass="navTooltip" matTooltip="Notifications" [matMenuTriggerFor]="notifMenu" class="x-NavbarIcon" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <mat-menu #notifMenu="matMenu" xPosition="before">
+            <app-menu-notification></app-menu-notification>
+        </mat-menu>
+
+          <button  matTooltipClass="navTooltip" matTooltip="Account" class="x-NavbarIcon" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>account_circle</mat-icon>
+          </button>
+
+          <button  matTooltipClass="navTooltip" matTooltip="Settings" [matMenuTriggerFor]="setMenu" class="x-NavbarIcon" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+            <mat-icon>settings</mat-icon>
+          </button>
+          <mat-menu #setMenu="matMenu" xPosition="before">
+            <app-menu-settings></app-menu-settings>
+        </mat-menu>
+    </div>
+    </div>
+
+    <div [ngClass]="toogleSearchbarClass" class="dFlex w-100 h-100 x-SecondarySearch x-Nav2" >
+        <div class="x-SecondaryButton dFlex">
+            <button (click)="toogleSearchbar('dFlex')" matTooltipClass="navTooltip" matTooltip="Back" style="line-height:0px;" mat-icon-button aria-label="Back to Navbar">
+                <mat-icon>arrow_back</mat-icon>
+              </button>
+        </div>
+        <div class="dFlex x-searchWrapper w-100">
+            <input placeholder="Search" class="x-searchInputArea w-100" type="text" >
+            <div matTooltipClass="navTooltip" matTooltip="Search" matRipple [matRippleColor]="'#00000012'" class="x-searchButton dFlex ">
+                <mat-icon class="x-searchIcon">
+                    search
+                </mat-icon>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+:host{
+    width:100%;
+    height: 100%;
+
+    display: flex;
+    display: -ms-flexbox;
+    display: -ms-flexbox;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sideNavMain{
+    margin: auto;
+
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+
+    grid-template-columns:1fr;
+    grid-gap:20px;
+
+    height: max-content;
+    width: max-content ;
+
+    margin: auto;
+
+
+}
+
+.x-SidenavCard{
+    width:40px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+}
+
+.x-SidebarNavIcon{
+    margin: auto;
+}
+
+.x-MainNavSide{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* background: #e8e8e8;*/
+    cursor: pointer;
+    color: #606060;
+    box-shadow: 0 0;
+}
+
+.x-MainNavSideActive{
+    color:#007ac1;
+}
+
+.x-SideNavText{
+    padding:5px;
+    font-family:'Roboto',serif;
+    font-weight: bold;
+}

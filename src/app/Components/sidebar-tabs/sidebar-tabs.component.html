@@ -1,0 +1,24 @@
+<div class="tabsWrapper w-100 h-100 dFlex flexC">
+    <div class="tabsHeader w-100 dFlex">
+        <div matTooltipClass="sideTooltip" matTooltip="Links" matRipple [matRippleColor]="'#00000012'" class="x-tabsButtons w-100 dFlex"><mat-icon class="x-SidebarTabsIcon" aria-hidden="false" aria-label="Example home icon">link</mat-icon></div>
+        <div matTooltipClass="sideTooltip" matTooltip="Navigation" matRipple [matRippleColor]="'#00000012'" class="x-tabsButtons w-100 dFlex x-SidebarTabActive"><mat-icon class="x-SidebarTabsIcon" aria-hidden="false" aria-label="Example home icon">list</mat-icon></div>
+        <div matTooltipClass="sideTooltip" matTooltip="Extras" matRipple [matRippleColor]="'#00000012'" class="x-tabsButtons w-100 dFlex"><mat-icon class="x-SidebarTabsIcon" aria-hidden="false" aria-label="Example home icon">bookmark</mat-icon></div>
+    </div>
+    <div class="tabsBody w-100 h-100">
+        <div class="x-tabsContent">
+            <app-sidebar-links></app-sidebar-links>
+        </div>
+        <div class="x-tabsContent">
+            <app-sidebar-navigation></app-sidebar-navigation>
+        </div>
+        <div class="x-tabsContent">
+            <app-sidebar-extras></app-sidebar-extras>
+        </div>
+    </div>
+</div>
+
+<div class="x-SidebarSecondaryMenu">
+    <button class="x-MenuButton" mat-icon-button aria-label="Open Menu">
+        <mat-icon  aria-hidden="false" aria-label="Example home icon">menu</mat-icon>
+    </button>
+</div>

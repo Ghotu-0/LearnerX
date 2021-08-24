@@ -1,0 +1,43 @@
+.x-MainSidebar{
+    position: relative;
+    min-width:240px;
+    background-color: white;
+    background-color:var(--x-MainSidebar-BColor);
+    height:100%;
+    z-index: 2;
+    left:0;
+}
+
+.x-MainNavbar{
+
+    height: 51px;    
+    background-color: var(--x-MainNavbar-Color);
+    box-shadow:var(--x-MainNavbar-BoxShadow);
+    border-bottom: 1px solid #bbbbbb;
+
+}
+
+.x-UltimateArea{
+    transition:0.3s;
+    background-color: #e8e8e8;
+}
+
+ 
+
+@media only screen and (max-width: 1000px) {
+
+    :root{
+        --x-SidebarLeft:-240px;
+    }
+
+    .x-MainSidebar {
+        transition: 0.3s;
+        position: absolute;
+        left:var(--x-SidebarLeft);
+    }
+
+    .x-UltimateArea{
+        filter:brightness(var(--x-MainOpacity));
+    }
+
+  }

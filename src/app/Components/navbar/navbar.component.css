@@ -1,0 +1,166 @@
+:host{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.x-Nav1{
+    width:60%;
+    justify-content: start;
+    align-items: center;
+}
+
+.x-Nav2{
+    justify-content: center;
+    align-items: center;
+}
+
+.x-Nav3{
+    width:60%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.x-MenuIcons{
+
+    color:#606060;
+
+}
+
+.x-MenuButton{
+    display: none;
+    margin-right:16px;
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .x-MenuButton{
+
+        display: block;
+
+    }
+
+  }
+ 
+ .x-searchInputArea{
+    font-family:'Roboto',serif;
+    font-size:1rem;
+    font-style: normal;
+    max-height: 26px;
+    border: 1px solid #bbbbbb;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 2px;
+    padding-left:15px;
+    padding-right:0px;
+ }
+
+ .x-searchInputArea:focus-visible{
+  
+    outline: transparent;
+
+ }
+
+ .x-searchButton{
+    border: 1px solid #bbbbbb;
+    background-color: #e8e8e8;
+    cursor: pointer;
+    border-left: 0;
+    margin: auto;
+    width:50px;
+    min-height:26px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 2px;
+
+ }
+
+ .x-searchIcon{
+    color: #685252;
+    margin: auto;
+ }
+
+ .x-NavbarIcon{
+
+    color: #606060;
+    margin-left:10px;
+
+ }
+
+ ::ng-deep .navTooltip{
+     font-family:'Roboto';
+     font-size:0.9rem;
+ }
+
+ .x-SecondarySearch{
+    background-color: white;
+    position: absolute;
+ }
+
+ .x-SecondaryButton{
+     width:40px;
+     height: 40px;
+     cursor: pointer;
+     margin:auto;
+     align-items: center;
+     justify-content: center;
+     margin-right: 16px;
+     color: #606060;
+     
+ }
+
+
+
+ .x-PrimarySearchButton{
+    display: none;
+}
+
+ @media only screen and (max-width: 700px) {
+
+    .x-PrimarySearchButton{
+        display: block;
+    }
+
+    .x-PrimarySearch{
+        display:none;
+    }
+
+  }
+  @media only screen and (max-width: 400px) {
+    .x-NavbarIcon {
+
+        margin-left: 0px;
+    }
+  }
+
+  .extraFlex{
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+  .extraTrigger{
+      position: absolute;
+      color: #606060;
+  }
+
+  .extraTriggerButton{
+      display: none;
+  }
+
+  @media only screen and (max-width: 350px) {
+    .extraFlex{
+        
+        flex-direction: column-reverse;
+        top: 50px;
+        position: relative;
+        align-items: flex-end;
+      }
+
+      .extraTriggerButton{
+        display: block;
+    }
+
+ 
+  }
