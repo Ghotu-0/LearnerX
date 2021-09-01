@@ -5,8 +5,8 @@
 :root {
 
   --x-MainNavbar-Color: white;
-  --x-MainNavbar-BoxShadow: 0 0 0x 0px rgb(0 0 0 / 50%);
-  --x-MainSidebar-BColor:white;
+  --x-MainNavbar-BoxShadow: 0px -3px 10px 0px #808080;
+  --x-MainSidebar-BColor:#002b4c;
 
 
   /* For computational design */
@@ -16,6 +16,27 @@
   --x-MainOpacity:1;
   --x-SidebarBorder:1px;
   --x-350pxDrop:false;
+
+  --x-DivColor:#cccccc;
+  --x-UltimateColor:#e8e8e8;
+
+  --x-NavIconColor:#606060;
+
+  --x-SearchBarBorder:#bbbbbb;
+  --x-SearchButtonBackground:#e8e8e8;
+  --x-SidebarTabsIconColor:#b5b5b5;
+  --x-SidebarRippleColor:#00000012;
+  --x-SidebarNavRippleColor:#00000012;
+  --x-SidebarNavigationColor:#b5b5b5;
+  --x-SidebarNavigationActiveColor:#52bfff;
+  --x-SidebarHeadActiveColor:#52bfff;
+
+  --x-Primary:#007ac1;
+  --x-HomeTopicControlColor:white;
+  --x-HomeTopicDiscColor:#4d4d4d;
+  --x-HomeTopicIcon:#00000033;
+  --x-HomeTopicControlMetaColor:#e8e8e8;
+
 
 
 }
@@ -100,4 +121,10 @@
   display: flex !important;
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
+}
+
+.dGrid{
+   display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
 }

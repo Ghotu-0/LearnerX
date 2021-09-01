@@ -23,7 +23,7 @@
 
 .x-MenuIcons{
 
-    color:#606060;
+    color:var(--x-NavIconColor);
 
 }
 
@@ -48,7 +48,7 @@
     font-size:1rem;
     font-style: normal;
     max-height: 26px;
-    border: 1px solid #bbbbbb;
+    border: 1px solid var(--x-SearchBarBorder);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     padding: 2px;
@@ -63,8 +63,8 @@
  }
 
  .x-searchButton{
-    border: 1px solid #bbbbbb;
-    background-color: #e8e8e8;
+    border: 1px solid var(--x-SearchBarBorder);
+    background-color: var(--x-SearchButtonBackground);
     cursor: pointer;
     border-left: 0;
     margin: auto;
@@ -73,17 +73,18 @@
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     padding: 2px;
+    overflow: hidden;
 
  }
 
  .x-searchIcon{
-    color: #685252;
+    color: var(--x-NavIconColor);
     margin: auto;
  }
 
  .x-NavbarIcon{
 
-    color: #606060;
+    color: var(--x-NavIconColor);
     margin-left:10px;
 
  }
@@ -94,7 +95,7 @@
  }
 
  .x-SecondarySearch{
-    background-color: white;
+    background-color: var(--x-MainNavbar-Color);
     position: absolute;
  }
 
@@ -106,7 +107,7 @@
      align-items: center;
      justify-content: center;
      margin-right: 16px;
-     color: #606060;
+     color: var(--x-NavIconColor);
      
  }
 
@@ -137,12 +138,13 @@
   .extraFlex{
     align-items: center;
     justify-content: flex-end;
+   
   }
 
 
   .extraTrigger{
       position: absolute;
-      color: #606060;
+      color: var(--x-NavIconColor);
   }
 
   .extraTriggerButton{
@@ -151,11 +153,15 @@
 
   @media only screen and (max-width: 350px) {
     .extraFlex{
-        
+        z-index:3;
         flex-direction: column-reverse;
-        top: 50px;
-        position: relative;
+        top: 55px;
+        position: absolute;
         align-items: flex-end;
+        background-color: var(--x-MainNavbar-Color);
+        height: 165px !important;
+        width: 42px !important;
+        border-radius: 20px;
       }
 
       .extraTriggerButton{

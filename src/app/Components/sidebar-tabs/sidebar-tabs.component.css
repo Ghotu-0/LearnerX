@@ -1,12 +1,12 @@
-.tabsWrapper{
+/* .tabsWrapper{
 
-    border-right: 1px solid #bbbbbb;
+    border-right: 1px solid var(--x-DivColor);
     
-}
+} */
 
 .tabsHeader{
 
-    border-bottom: 1px solid #bbbbbb;
+    /* border-bottom: 1px solid var(--x-DivColor); */
     min-height: 50px;
     position: relative;
 
@@ -14,7 +14,7 @@
 
 .tabsHeader::after{
 
-    border: 7px solid #0e598b;
+    border: 7px solid var(--x-Primary);
     content: "";
     border-left-color: transparent;
     border-right-color: transparent;
@@ -30,7 +30,7 @@
     width: 33.3%;
     position: absolute;
     bottom: 0;
-    border-bottom: 2px solid #007ac1;
+    border-bottom: 2px solid var(--x-SidebarHeadActiveColor);
     content: "";
     transition: 0.5s;
     left: calc(33.3% * var(--x-SidebarStickLeft));
@@ -55,11 +55,11 @@
 
 
 .x-SidebarTabsIcon{
-    color:#606060;
+    color:var(--x-SidebarTabsIconColor);
 }
 
 .x-SideIconActive{
-    color:#007ac1;
+    color:var(--x-SidebarHeadActiveColor);
 }
 
 .x-tabsContent{
@@ -67,6 +67,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -77,24 +78,24 @@
 
 .x-SidebarTabActive{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.3);
     transition: 1s; 
 }
 
 .x-SidebarSecondaryMenu{
-    color: #606060;
+    color: var(--x-SidebarTabsIconColor);
     position: absolute;
     top: 0px;
     right: -60px;
     width: 61px;
-    height: 50px;
+    height: 51px;
     justify-content: flex-end;
     align-items: center;
-    background-color: white;
+    background-color: var(--x-MainSidebar-BColor);
     border-radius: 30px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     display: none;
+    
 }
 
 
@@ -108,12 +109,6 @@
     
 
 
-    .tabsWrapper{
-
-        border-right: var(--x-SidebarBorder) solid #bbbbbb;
-        
-    }
-
 }
 
 ::ng-deep .sideTooltip{
@@ -123,9 +118,14 @@
 
 .x-MenuButton{
     margin-right:5px;
+   
 }
 
 .x-searchHideClass{
     margin:0;
     padding:0;
+}
+
+.x-MenuIconCenter{
+    line-height: 22px !important;
 }

@@ -1,0 +1,22 @@
+:host{
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    position: absolute;
+    box-sizing: border-box;
+    overflow: auto;
+   
+}
+
+.x-MainGrid{
+    width: 100%;
+    height: 100%;
+    grid-gap:10px;
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-auto-rows:30px;
+
+}
+

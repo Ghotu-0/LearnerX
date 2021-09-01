@@ -1,1 +1,22 @@
-<p>home-topic works!</p>
+<mat-card   class="x-HomeTopicContainer dFlex flexR">
+    <div class="x-TopicImageContainer">
+        <img  [src]="topicImageRef" alt="Image" class="x-TopicImage">
+    </div>
+    <div class="x-TopicControlArea dFlex">
+        <div class="x-TopicControlArea1 dFlex flexC">
+            <img [src]="topicOwnerLogo" alt="Image" class="x-TopicOwnerImage">
+            <mat-icon class="x-TopicControlMoreIcon" >more_vert</mat-icon>
+        </div>
+        <div class="x-TopicControlArea2 dFlex flexC">
+            <div [title]="topicHeading" class="x-TopicHeading dFlex">
+               {{topicHeading}}
+            </div>
+            <div class="x-TopicOwnerDisc">
+                <div matTooltipClass="x-HomeToolTip" [matTooltip]="topicOwnerName"  class="x-TopicOwnerName">{{topicOwnerName}}</div>
+                <div class="x-TopicMetaData">
+                    {{topicViews}} views • {{topicPoints}} points • {{topicTimeline}} ago • {{topicLikes}} likes
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-card>

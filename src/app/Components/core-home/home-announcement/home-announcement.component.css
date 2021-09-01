@@ -1,0 +1,142 @@
+.remove2 {
+  width: 100%;
+  height: 100%;
+  grid-row: auto / span 7;
+  grid-column: auto / span 2;
+}
+
+.remove1 {
+  width: 100%;
+  height: 100%;
+  grid-gap: 10px;
+  display: grid;
+  display: -ms-grid;
+  display: -moz-grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 30px;
+}
+
+
+:host {
+  width: 100%;
+  height: 100%;
+  grid-row: auto / span 7;
+  grid-column: auto / span 2;
+}
+
+.x-HomeAnnounceContainer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding:5px;
+  /***/
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+  :host {
+    grid-row: auto / span 14;
+    grid-column: auto / span 1;
+  }
+
+
+}
+
+.x-HomeAnnounceTitleContainer {
+  background-color: #e8e8e8;
+  width: 100%;
+  height: calc(20% - 5px);
+  margin-bottom:5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.x-HomeAnnounceDiscContainer {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+}
+
+.x-HomeAnnouncementImages {
+  width: 50%;
+  margin-right: 0px;
+  background-color: #e8e8e8;
+}
+
+.x-HomeAnnouncementOwnerDisc {
+  width: 50%;
+  margin-left: 5px;
+  background-color: #e8e8e8;
+  border-bottom-right-radius: 20px;
+}
+
+.x-AnnounceImage {
+  width: 100%;
+  height: 100%;
+}
+
+.x-AnnounceOwnerLogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 36px;
+  margin: 10px;
+  margin-right: 7.5px;
+  background-color: #e8e8e8;
+}
+
+.x-AnnounceOwnerLogoContainer {
+  width: 48px;
+  height: 48px;
+  border-radius: 36px;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+.x-AnnounceOwnerDesc {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.x-AnnounceImageAndTitle {
+  width: 90%;
+  margin-top:5px;
+  background-color: white;
+  border-radius: 50px;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 0;
+}
+
+.x-AnnounceOwnerName {
+  width: calc(90% - 68px);
+  justify-content: center;
+  align-items: center;
+  color: #002b4c;
+  border-left: 3px solid #e8e8e8;
+}
+
+.x-AnnounceImageAndTitleDesc1{
+    width: 90%;
+    height:50px;
+    margin-top:5px;
+    background-color: white;
+    border-radius:60px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-AnnounceImageAndTitleDesc2{
+    width: 90%;
+    height:50px;
+    margin-top:5px;
+    background-color: white;
+    border-radius:60px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 60px;
+    justify-content: center;
+    align-items: center;
+}

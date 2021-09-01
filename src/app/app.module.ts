@@ -15,7 +15,9 @@ import {SidebarExtrasComponent} from './Components/sidebar-extras/sidebar-extras
 import {CoreHomeComponent} from './Components/core-home/core-home.component';
 import {CoreDashboardComponent} from './Components/core-dashboard/core-dashboard.component';
 import {CoreLecternsComponent} from './Components/core-lecterns/core-lecterns.component';
-import {CoreToolsComponent} from './Components/core-tools/core-tools.component'
+import {CoreToolsComponent} from './Components/core-tools/core-tools.component';
+import {HomeTopicComponent} from './Components/core-home/home-topic/home-topic.component';
+import { HomeAnnouncementComponent } from './Components/core-home/home-announcement/home-announcement.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import {CoreToolsComponent} from './Components/core-tools/core-tools.component'
     CoreHomeComponent,
     CoreDashboardComponent,
     CoreLecternsComponent,
-    CoreToolsComponent
+    CoreToolsComponent,
+    HomeTopicComponent,
+    HomeAnnouncementComponent
 
   ],
   imports: [

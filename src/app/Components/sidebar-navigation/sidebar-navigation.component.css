@@ -19,7 +19,7 @@
     display: -moz-grid;
 
     grid-template-columns:1fr;
-    grid-gap:20px;
+    grid-gap:25px;
 
     height: max-content;
     width: max-content ;
@@ -43,24 +43,29 @@
 
 .x-MainNavSide{
     display: flex;
-    width: 60px;
+    width: 240px;
     height: 60px;
     margin: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   /* background: #e8e8e8;*/
+    background: transparent;
     cursor: pointer;
-    color: #606060;
+    color: var(--x-SidebarNavigationColor);
     box-shadow: 0 0;
+    padding-top:10px;
+    padding-bottom:5px;
+
 }
 
 .x-MainNavSideActive{
-    color:#007ac1;
+    color:var(--x-SidebarNavigationActiveColor);
 }
 
 .x-SideNavText{
     padding:5px;
     font-family:'Roboto',serif;
     font-weight: bold;
+    font-size: 0.8em;
 }
+

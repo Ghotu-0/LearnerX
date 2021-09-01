@@ -9,6 +9,8 @@ export class HomeAnnouncementComponent implements OnInit {
 
   constructor() { }
 
+  hello="Home Announcement";
+
   ngOnInit(): void {
   }
 
