@@ -2,8 +2,13 @@
 <link rel="stylesheet" href="home-announcement.component.css"> -->
 
     <mat-card class="x-HomeAnnounceContainer dFlex flexC">
-        <div class="x-HomeAnnounceTitleContainer">
-           l
+        <div class="x-HomeAnnounceTitleContainer dFlex">
+           <div class="x-AnnounceIcon dFlex">
+               <mat-icon>campaign</mat-icon>
+           </div>
+           <div class="x-HomeAnnounceTitle dFlex">
+             <div class="x-AnnounceTitleClamp">Lorem ipsum dolor sit amet consectetur, adipisicing</div>
+           </div>
         </div>
         <div class="x-HomeAnnounceDiscContainer dFlex flexR">
             <div class="x-HomeAnnouncementImages">
@@ -13,13 +18,29 @@
                 <div class="x-AnnounceOwnerDesc dFlex flexC">
                     <div class="x-AnnounceImageAndTitle dFlex">
                         <img src="https://picsum.photos/200/300" alt="Image" class="x-AnnounceOwnerLogo">
-                        <div class="x-AnnounceOwnerName dFlex"> LearnerX </div>
+                        <div class="x-AnnounceOwnerName dFlex"> 
+                            <div class="x-AnnounceOwnerClamp">
+                                LearnerX
+                            </div> 
+                    </div>
                     </div>
                     <div class="x-AnnounceImageAndTitleDesc1 dFlex">
-                        l
+                        <div class="x-HomeAnnounceLevels dFlex">
+                            <mat-icon>thumb_up</mat-icon>
+                            <div class="x-AnnounceVotesText">129M</div>
+                        </div>
+                        <div class="x-HomeAnnounceLevels dFlex">
+                            <mat-icon>thumb_down</mat-icon>
+                            <div class="x-AnnounceVotesText">129M</div>
+                        </div>
+                        <div class="x-HomeAnnounceMenu dFlex">
+                            <button class="dFlex fCenter" mat-icon-button aria-label="More">
+                                <mat-icon>more_vert</mat-icon>
+                              </button>
+                        </div>
                     </div>
                     <div class="x-AnnounceImageAndTitleDesc2 dFlex">
-                        l
+                        <button mat-button>Visit</button>
                     </div>
                 </div>
             </div>

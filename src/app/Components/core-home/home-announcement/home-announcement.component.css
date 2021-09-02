@@ -48,8 +48,9 @@
   width: 100%;
   height: calc(20% - 5px);
   margin-bottom:5px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  align-items: center;
 }
 
 .x-HomeAnnounceDiscContainer {
@@ -102,7 +103,6 @@
 
 .x-AnnounceImageAndTitle {
   width: 90%;
-  margin-top:5px;
   background-color: white;
   border-radius: 50px;
   border-top-right-radius: 60px;
@@ -115,6 +115,10 @@
   align-items: center;
   color: #002b4c;
   border-left: 3px solid #e8e8e8;
+  font-family: Roboto , sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.3px;
+  padding-left:10px;
 }
 
 .x-AnnounceImageAndTitleDesc1{
@@ -127,6 +131,7 @@
     border-bottom-right-radius: 0;
     justify-content: center;
     align-items: center;
+  
 }
 
 .x-AnnounceImageAndTitleDesc2{
@@ -139,4 +144,68 @@
     border-bottom-right-radius: 60px;
     justify-content: center;
     align-items: center;
+}
+
+.x-AnnounceIcon{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    color: #002b4c;
+    border-right: 3px solid white;
+  
+}
+
+.x-HomeAnnounceTitle{
+  width: calc(100% - 50px);
+  height: 100%;
+  color: #002b4c;
+  font-family: Roboto , sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.3px;
+
+  justify-content: center;
+  align-items: center;
+ 
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+.x-AnnounceTitleClamp{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
+}
+
+.x-AnnounceOwnerClamp{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+}
+
+.x-HomeAnnounceLevels{
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  height:100%;
+  width:33.3%;
+  color: #606060;
+}
+
+.x-HomeAnnounceMenu{
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  height:100%;
+  width:10%;
+  color: #606060;
+}
+ 
+
+.x-AnnounceVotesText{
+  padding:5px;
+  font-size:0.8em;
 }

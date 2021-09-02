@@ -128,3 +128,8 @@
     display: -ms-grid;
     display: -moz-grid;
 }
+
+.fCenter{
+  justify-content: center;
+  align-items: center;
+}
